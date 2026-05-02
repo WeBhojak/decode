@@ -12,27 +12,17 @@ import { siteConfig } from "@/config/site";
         </p>
       </div>
       <div class="flex items-center gap-6">
-        <a
-          href={siteConfig.socialLinks.twitter}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-muted-foreground transition-colors hover:text-primary"
-          >Twitter</a
-        >
-        <a
-          href={siteConfig.socialLinks.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-muted-foreground transition-colors hover:text-primary"
-          >GitHub</a
-        >
-        <a
-          href={siteConfig.socialLinks.discord}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="text-muted-foreground transition-colors hover:text-primary"
-          >Discord</a
-        >
+        {
+          Object.keys(siteConfig.socialLinks).map((item) => (
+            <a
+              href={siteConfig.socialLinks[item]}
+              target="_blank"
+              class="hover:text-primary capitalize"
+            >
+              {item}
+            </a>
+          ))
+        }
       </div>
     </div>
     <div

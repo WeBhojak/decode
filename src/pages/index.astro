@@ -6,17 +6,11 @@ import Features from "@/components/widgets/Features.astro";
 import devImg from "@/assets/images/dev_balanced.png";
 import openSourceImg from "@/assets/images/open-source.png";
 import Content2 from "@/components/widgets/Content2.astro";
-const metadata = {
-  title: `${siteConfig.name} — The next step for your project`,
-  description:
-    "A modern and professional template for your web projects with Astro and Tailwind CSS. Boost your development with a solid foundation.",
-  ignoreTitleTemplate: true,
-};
 ---
 
-<BaseLayout {metadata}>
+<BaseLayout>
   <Hero
-    title={`Starter Template for <br class="hidden md:block" /> <span class="bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Web Developers</span>`}
+    title={`Your DevOps Journey <br class="hidden md:block" /> <span class="bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Starts Here</span>`}
     tagline="Astro v5 + Tailwind v4"
     description={`${siteConfig.description}`}
     actions={[

@@ -1,26 +1,25 @@
 import ogImage from "@/assets/og-image.png";
+import type { SiteConfig } from "@/types/types";
 
-export const siteConfig = {
-  name: "Astro Starter Pro",
-  description:
-    "Starter template optimized for SEO and performance. A solid foundation to start your projects with best practices.",
-  url: "https://astrostarterpro.com",
+export const siteConfig: SiteConfig = {
+  name: "Decode With Avyay",
+  description: "Your one stop guide to DevOps",
+  url: "https://decodewithavyay.com/",
   lang: "en",
   locale: "en_US",
-  author: "Devgelo",
-  twitter: "@Devgelo",
+  author: "Avyay",
+  twitter: "@AvyayPraty1336",
+  instagram: "@decodewithavyay",
+  linkedin: "Avyay Pratyush",
   ogImage: ogImage,
   socialLinks: {
-    twitter: "https://twitter.com",
-    github: "https://github.com/devgelo-labs/astro-starter-pro",
-    discord: "https://discord.com",
+    instagram: "https://www.instagram.com/decodewithavyay",
+    twitter: "https://x.com/avyaypraty1336",
+    linkedin: "https://www.linkedin.com/in/avyaypratyush/",
   },
   navLinks: [
     { text: "Home", href: "/" },
-    { text: "About", href: "/about" },
-    { text: "Services", href: "/services" },
-    { text: "Blog", href: "/blog" },
-    { text: "Contact", href: "/contact" },
-    { text: "Widgets", href: "/widgets" },
+    { text: "About", href: "#about" },
+    { text: "Contact", href: "#contact" },
   ],
 };

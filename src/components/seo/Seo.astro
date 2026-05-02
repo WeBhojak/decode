@@ -60,3 +60,28 @@ const canonicalURL =
     <meta property="twitter:creator" content={siteConfig.twitter} />
   )
 }
+
+<!-- Instagram -->
+<meta property="instagram:card" content="summary_large_image" />
+<meta property="instagram:url" content={Astro.url} />
+<meta property="instagram:title" content={fullTitle} />
+<meta property="instagram:description" content={description} />
+<meta
+  property="instagram:image"
+  content={new URL(ogImageSrc, siteConfig.url)}
+/>
+{
+  siteConfig.instagram && (
+    <meta property="instagram:creator" content={siteConfig.instagram} />
+  )
+}
+
+<!-- LinkedIn -->
+<meta property="linkedin:title" content={fullTitle} />
+<meta property="linkedin:description" content={description} />
+<meta property="linkedin:image" content={new URL(ogImageSrc, siteConfig.url)} />
+{
+  siteConfig.linkedin && (
+    <meta property="linkedin:creator" content={siteConfig.linkedin} />
+  )
+}

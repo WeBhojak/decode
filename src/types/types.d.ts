@@ -72,3 +72,22 @@ export interface ValuesProps extends HeadlineProps {
   items?: Value[];
   columns?: 1 | 2 | 3 | 4;
 }
+
+interface SocialLinks {
+  [key: string]: string | undefined;
+}
+
+export interface SiteConfig {
+  name: string;
+  description: string;
+  url: string;
+  lang: string;
+  locale: string;
+  author: string;
+  ogImage: ImageMetadata;
+  socialLinks: SocialLinks;
+  navLinks: { text: string; href: string }[];
+  twitter: string;
+  instagram: string;
+  linkedin: string;
+}
