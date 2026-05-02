@@ -18,7 +18,7 @@ export const siteConfig: SiteConfig = {
     linkedin: "https://www.linkedin.com/in/avyaypratyush/",
   },
   navLinks: [
-    { text: "Home", href: "/" },
+    { text: "Home", href: "#home" },
     { text: "About", href: "#about" },
     { text: "Contact", href: "#contact" },
   ],
