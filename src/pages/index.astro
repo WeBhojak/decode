@@ -3,65 +3,68 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import { siteConfig } from "@/config/site";
 import Hero from "@/components/widgets/Hero.astro";
 import Features from "@/components/widgets/Features.astro";
-import devImg from "@/assets/images/dev_balanced.png";
-import openSourceImg from "@/assets/images/open-source.png";
-import Content2 from "@/components/widgets/Content2.astro";
 ---
 
 <BaseLayout>
   <Hero
     title={`Your DevOps Journey <br class="hidden md:block" /> <span class="bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Starts Here</span>`}
-    tagline="Astro v5 + Tailwind v4"
+    tagline="Coming Soon..."
     description={`${siteConfig.description}`}
     actions={[
       {
-        text: "Get Started",
+        text: "Check out my Instagram",
         href: "https://github.com/devgelo-labs/astro-starter-pro",
         variant: "primary",
-        icon: "lucide:github",
+        icon: "lucide:instagram",
       },
-      {
-        text: "Our Services",
-        href: "/services",
-        variant: "secondary",
-        icon: "lucide:arrow-right",
-        ariaLabel: "Learn more about our services",
-      },
+      // {
+      //   text: "Our Services",
+      //   href: "/services",
+      //   variant: "secondary",
+      //   icon: "lucide:arrow-right",
+      //   ariaLabel: "Learn more about our services",
+      // },
     ]}
   />
   <Features
     tagline="Features"
-    title="What's Included"
-    subtitle="A selection of tools and configurations to streamline your workflow."
+    title="What's coming"
+    subtitle="Curated high quality DevOps content"
     features={[
       {
-        title: "Optimized SEO",
+        title: "Concise DevOps Guides",
         description:
-          "Base configuration for Meta tags, Open Graph, and Sitemap generation.",
-        icon: "lucide:scan-search",
+          "Step‑by‑step tutorials covering CI/CD, Docker, Kubernetes and Terraform.",
+        icon: "lucide:book-open",
         iconClass: "bg-blue-500/10 text-blue-400",
       },
       {
-        title: "High Performance",
-        description: "Lightweight structure for fast load times.",
-        icon: "lucide:zap",
+        title: "Handy Cheatsheets",
+        description:
+          "Quick command references and config snippets you can copy and reuse.",
+        icon: "lucide:clipboard",
         iconClass: "bg-purple-500/10 text-purple-400",
       },
       {
-        title: "Tailwind v4",
+        title: "Career Guides & Mentorship",
         description:
-          "Integrated configuration with the latest version of Tailwind CSS.",
-        icon: "lucide:palette",
-        iconClass: "bg-pink-500/10 text-pink-400",
+          "Resume tips, interview prep, and real-world career advice to help you break into DevOps.",
+        icon: "lucide:graduation-cap",
+        iconClass: "bg-emerald-500/10 text-emerald-400",
       },
+      // {
+      //   title: "Curated Resources",
+      //   description: "Playlists, articles and tools hand-picked to accelerate your learning path.",
+      //   icon: "lucide:link",
+      //   iconClass: "bg-yellow-500/10 text-yellow-400",
+      // },
     ]}
   />
-  <Content2
+  <!-- <Content2
     items={[
       {
         title: "Responsive Design",
-        description:
-          "Base configuration for Meta tags, Open Graph, and Sitemap generation.",
+        description: "Base configuration for Meta tags, Open Graph, and Sitemap generation.",
         icon: "lucide:scan-search",
         iconClass: "bg-blue-500/10 text-blue-400",
       },
@@ -73,8 +76,7 @@ import Content2 from "@/components/widgets/Content2.astro";
       },
       {
         title: "Tailwind v4",
-        description:
-          "Integrated configuration with the latest version of Tailwind CSS.",
+        description: "Integrated configuration with the latest version of Tailwind CSS.",
         icon: "lucide:palette",
         iconClass: "bg-pink-500/10 text-pink-400",
       },
@@ -83,9 +85,7 @@ import Content2 from "@/components/widgets/Content2.astro";
     imageAlt="Development"
   >
     <Fragment>
-      <h3 class="text-2xl font-bold tracking-tight sm:text-3xl mb-2">
-        Development
-      </h3>
+      <h3 class="text-2xl font-bold tracking-tight sm:text-3xl mb-2">Development</h3>
       We provide a solid foundation to start your projects with best practices.
     </Fragment>
   </Content2>
@@ -93,22 +93,19 @@ import Content2 from "@/components/widgets/Content2.astro";
     items={[
       {
         title: "Open Source",
-        description:
-          "Developed under the MIT license, free for personal and commercial use.",
+        description: "Developed under the MIT license, free for personal and commercial use.",
         icon: "lucide:github",
         iconClass: "bg-indigo-500/10 text-indigo-400",
       },
       {
         title: "Community Driven",
-        description:
-          "Built with the feedback and contributions of the developer community.",
+        description: "Built with the feedback and contributions of the developer community.",
         icon: "lucide:users",
         iconClass: "bg-orange-500/10 text-orange-400",
       },
       {
         title: "Regular Updates",
-        description:
-          "Continuously improved with the latest technologies and best practices.",
+        description: "Continuously improved with the latest technologies and best practices.",
         icon: "lucide:refresh-cw",
         iconClass: "bg-teal-500/10 text-teal-400",
       },
@@ -118,11 +115,9 @@ import Content2 from "@/components/widgets/Content2.astro";
     isReversed={true}
   >
     <Fragment>
-      <h3 class="text-2xl font-bold tracking-tight sm:text-3xl mb-2">
-        Open Source & Community
-      </h3>
-      Join the revolution of modern web development. This project is open for everyone
-      to use, learn from, and contribute to.
+      <h3 class="text-2xl font-bold tracking-tight sm:text-3xl mb-2">Open Source & Community</h3>
+      Join the revolution of modern web development. This project is open for everyone to use, learn from,
+      and contribute to.
     </Fragment>
-  </Content2>
+  </Content2> -->
 </BaseLayout>
